@@ -1,6 +1,4 @@
-# cs180-PROJECT5
-
-# CS180-Project-4-SocialPlatform
+# CS180-Project-5-IMPROVEDSocialPlatform
 ## Submission 
 Yagmur Onder - Submitted Report on Brightspace.  
   
