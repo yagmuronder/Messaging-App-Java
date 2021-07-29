@@ -7,7 +7,7 @@ Mahad Faruqi - Submitted Vocareum workspace.
 ## Overview
 ### The core target of project Social Platform (Option 3) is to create a Java program that permits different users to message each other. Users have the option to message 1 or more users, edit their account, edit their conversations, import a conversation or exit the program. File Input/Output techniques are also utilized widely to make sure data can persist even when the program shuts down or the user(s) is offline. As a social platform, each user who has existing account can message different accounts on the platform (identified as their friend list) or edit a message that has already been sent. 
 
-### For organization and readability of the project, there are 4 classes (Message, DuplicateUserException, User, Utils) along with the main class SocialPlatform.
+### For organization and readability of the project, there are 6 classes ()
  
  
  
@@ -108,25 +108,3 @@ Mahad Faruqi - Submitted Vocareum workspace.
  
 
 
-## 5. SocialPlatform main class
- 1. The main class SocialPlatform will firstly process the initialization objects and file.
- 2. Parse the user information in the userFile and prompt user to log in or sign up.
- 3. Select from Login or sign up  
-    (1) Login if the user has existing acc.  
-    (2) Sign up first and then login with newly created account.  
-     - repeat until the user information matches anyone in the existing file.  
- 4. If there is only one user existing in the user file, show the "utils.menuForOneUser" which only has features of customizing current account.  
-    - (1) Edit account  
-       - (1) Change Username  
-       - (2) Change Password  
-       - (3) DELETE Account      **delete current account from userFile and any message belong to this user  
-    - (4) Back      **going back to the previous menu  
-    - (2) Back  
-    - (3) Logout  
- -   If there are multiple users existing in the user file, show the completed menu contains messaging features along with messaging editor.  
-     - (1) Do you want to edit your account?  
-        - same function as Edit account  
-     - (2) Do you want to message someone?  
-        - (1) Create new Chat     **Create new chat message with other existing user(s)  
-        - (2) View Existing Chat      **message has been sent to other user(s)  
-        - (3) Do you want to edit or delete your messages?  
