@@ -91,8 +91,8 @@ Mahad Faruqi - Submitted Vocareum workspace.
  | menu | void | User user, ArrayList<User> users |  public | process the input choice of menu shown when there are more than one existing users |
  | editMessages | void | User user, ArrayList<User> users | public | edit or delete message determined by what line user selects, updates changes to files |
  | editAccount | void | User user, ArrayList<User> users | public | edit the user name or password of the current account  |
- | signUp | ArrayList<User> | File userFile, ArrayList<User> users | public | create and save new user  |
- | logIn | ArrayList<User> | File userFile, ArrayList<User> users | public | log in to already-made account   |
+ | signUp | ArrayList<User> | File userFile, ArrayList<User> users | public | create and save new user with simple GUI windows |
+ | logIn | ArrayList<User> | File userFile, ArrayList<User> users | public | log in to already-made account with simple GUI windows   |
  | changeUserFile | void | ArrayList<User> users | public | change the information of user on how they edited their account (change username, change password, delete account)  |
  | parseUsers | ArrayList<User> | File userFile, ArrayList<User> users | public | parses the users from userFile |
  | parseMessage | ArrayList<User> | ArrayList<User> users, User user | public | parse messages of a user  |
