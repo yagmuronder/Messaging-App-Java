@@ -261,7 +261,7 @@ Main method will start MessengerServer thread whenever new MessengerClient socke
 | message | JScrollPane |  Container content, Jpanel menuPanel | public | creating JScrollPane for panels in the SocialMedia,  including panel to choose either create new chat or view existing chat, panel to show list of all user's friends, Jbuttons of choosing current available friends and message and actionlistener of choosing existing friends and messages  |
  | findDuplicate | User | ArrayList<User> users, User user1 | public | return the duplicated user, otherwise return false   |
   |createNewChat | JScrollPane | Container content, JPanel messagePanel, ArrayList<User> listChat | public | creates files to show the message and contactor and make sure panels listed in correct position, then create new message with the created file ("___.csv") and Users array ("messageUsers")and assign this message to the user's Arraylist of Message Object    |
-  | editMessage | JScrollPane | Container content, Message m| public | initialize the panels for message editing and adding action listeners for various message editing functions  |
-  | editArc | JPanel| Container content, JPanel menuPanel | public| initialize the panels for acc editing ( change username or password ) and the panels of confirmation  | 
+  | editMessage | JScrollPane | Container content, Message m| public |  the panels for message editing and adding action listeners for various message editing functions  |
+  | editAcc | JPanel| Container content, JPanel menuPanel | public|  the panels for acc editing ( change username or password ) and the panels of confirmation  | 
   | getMessageWithUserList | Message |  User currentUser, ArrayList<User> otherUsersList | public |  return the message sent or received by current user |
   | importMessage | JPanel | Container content, JPanel menuPanel | public | import message files from specify directory |
