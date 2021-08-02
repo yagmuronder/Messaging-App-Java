@@ -257,7 +257,7 @@ Main method will start MessengerServer thread whenever new MessengerClient socke
  
  Name	 | Return Type	| Parameters | Modifier | Description |
  | :--- | :--- | :--- | :---| :---|
-| run | void | none | public   |   the run method of GUI, creating all panels at the beginning as a function of Jbutton |
+| run | void | none | public   |   the run method of GUI, creating all panels at the beginning and start GUI of SocialMedia |
 | message | JScrollPane |  Container content, Jpanel menuPanel | public | creating JScrollPane for panels in the SocialMedia,  including panel to choose either create new chat or view existing chat, panel to show list of all user's friends, Jbuttons of choosing current available friends and message and actionlistener of choosing existing friends and messages  |
  | findDuplicate | User | ArrayList<User> users, User user1 | public | return the duplicated user, otherwise return false   |
   |createNewChat | JScrollPane | Container content, JPanel messagePanel, ArrayList<User> listChat | public | creates files to show the message and contactor and make sure panels listed in correct position, then create new message with the created file ("___.csv") and Users array ("messageUsers")and assign this message to the user's Arraylist of Message Object    |
