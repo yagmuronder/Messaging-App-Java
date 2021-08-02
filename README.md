@@ -122,9 +122,9 @@ Mahad Faruqi - Submitted Vocareum workspace.
 | userFile | File | public | file contains the data of certain user which make sure data can persist after an completed shutdown|
 
 ### Methods
-| Name | Type | Modifier | Description |
-|  :---      |     :---   |      :---  |      :---  |
-| run | void | public   |   the run method of MessengerServer thread |
+ Name	 | Return Type	| Parameters | Modifier | Description |
+ | :--- | :--- | :--- | :---| :---|
+| run | void | none | public   |   the run method of MessengerServer thread |
 #### In the run method, firstly it Initialize userFile and creat a utils object. Then it reads all the up-to-date existed users from userFile.csv. Then if there are more than one user in userFile, it will parse the message for the message function.  After that it will promt the loginOrSign window which is a while loop will never end until the user put the matched imformation save in the userFile. Once the login window loop breaks, it will show the GUI by launch GUI thread.The
  
 ### Main 
@@ -138,13 +138,130 @@ Main method will start MessengerServer thread whenever new MessengerClient socke
 | o | Object  | none   |   an Object created for synchronization |
 | user  | User       | private      |   certain user in the users ArrayList   |
 |users | ArrayList<User>  | private    |    users ArrayList      |
-| userFile | File | public | file contains the data of certain user which make sure data can persist after an completed shutdown|
+| u | utils | private | initilization of an Util object|
 
+  
+### Constructor
+  
+  | Parameters | Modifier |
+  | :--- | :--- |
+  | User user, ArrayList<User> users | public |
+ 
+### Panel and contents
+  #### FIRST PANEL - MENU
+    JPanel menuPanel;
+    JLabel welcomeHeader;
+    JLabel usernameDisplay;
+    JButton editAcc;
+    JButton messageSomeone;
+    JButton importConversation;
+    JButton logout;
+
+  #### MENU -> EDIT ACCOUNT PANEL
+    JPanel editAccPanel;
+    JButton editAccBack;
+    JPanel panelEdit;
+    JLabel editAccHeader;
+    JButton editFirstName;
+    JPanel editFirstNamePanel;
+    JPanel editFirstNameSubPanel;
+    JButton editLastName;
+    JPanel editLastNamePanel;
+    JPanel editLastNameSubPanel;
+    JButton editPassword;
+    JPanel editPasswordPanel;
+    JPanel editPasswordSubPanel;
+    JButton editUsername;
+    JPanel editUsernamePanel;
+    JPanel editUsernameSubPanel;
+    JLabel firstNameHeader;
+    JLabel lastNameHeader;
+    JLabel usernameHeader;
+    JLabel passwordHeaader;
+    JTextField usernameText;
+    JTextField passwordText;
+    JTextField firstNameText;
+    JTextField lastNameText;
+    JButton usernameConfirm;
+    JButton passwordConfirm;
+    JButton firstNameConfirm;
+    JButton lastNameConfirm;
+
+  #### MENU -> MESSAGE SOMEONE PANEL
+    JPanel messagePanel;
+    JLabel optionText;
+    JLabel optionText2;
+    JButton newChat;
+    JButton existingChat;
+    JButton backToMenu;
+    JPanel messageBottomPanel;
+
+  ##### MESSAGE -> CREATE NEW CHAT
+    JPanel listOfFriendsPanel;
+    JLabel listOfFriendsText;
+    JPanel bottomPanel;
+    JPanel otherOptionPanel;
+    JButton backToMessageMenu;
+    JButton startChat;
+    JPanel displayTextPanel;
+    JLabel displayingText;
+    JButton[] selectFriend;
+    String selectedUser;
+
+  ##### MESSAGE -> VIEW EXISTING CHAT
+    JPanel existingChatPanel;
+    JScrollPane usersListScrollable;
+    JPanel displayTextPanel2;
+    JLabel instructionText;
+    JPanel listOfMessage;
+    JButton[] selectChat;
+    JButton backToMessageMenu2;
+
+
+  ##### MESSAGE -> SEND MESSAGE
+    JPanel topChatPanel;
+    JLabel chatMemberHeader;
+    JPanel sendPanel;
+    JTextField messageBox;
+    JButton sendMessage;
+    JButton editThisMessage;
+    JButton backFromMessage;
+    JButton doneWithMessage;
+
+  ##### MESSAGE -> EDIT MESSAGE
+    JPanel editTopPanel;
+    JLabel editHeader;
+    JScrollPane editScrollPane;
+    JPanel editTextPanel;
+    JTextField editTextBox;
+    JButton doneWithEdit;
+    JButton backFromEdit;
+    JButton deleteMessage;
+    ArrayList<JButton> messageButtons;
+
+
+  #### MENU -> IMPORT MESSAGE
+    JPanel importPanel;
+    JPanel textPanel;
+    JPanel interactPanel;
+    JTextField fileNameBox;
+    JLabel instructionTextForImport;
+    JButton open;
+    JButton back;
+
+  #### Edit Message JTextArea
+    JTextArea editText;
+    JPanel editMessagePanel;
+    JPanel editPanel;
 ### Methods
-| Name | Type | Modifier | Description |
-|  :---      |     :---   |      :---  |      :---  |
-| run | void | public   |   the run method of MessengerServer thread |
-
-
-
-
+ 
+ Name	 | Return Type	| Parameters | Modifier | Description |
+ | :--- | :--- | :--- | :---| :---|
+| run | void | none | public   |   the run method of GUI, creating all panels at the beginning as a function of Jbutton |
+| message | JScrollPane |  Container content, Jpanel menuPanel | public | creating JScrollPane for panels in the SocialMedia,  including panel to choose either create new chat or view existing chat, panel to show list of all user's friends, Jbuttons of choosing current available friends and message and actionlistener of choosing existing friends and messages  |
+ | findDuplicate | User | ArrayList<User> users, User user1 | public | return the duplicated user, otherwise return false   |
+  |createNewChat | JScrollPane | Container content, JPanel messagePanel, ArrayList<User> listChat | public | creats files to show the message and contactor and make sure panels listed in correct position, then create new message with the created file ("___.csv") and Users array ("messageUsers")and assign this message to the user's Arraylist of Message Object    |
+  | editMessage | JScrollPane | Container content, Message m| public | initialize the panels for message editing and adding action listeners for various message editing functions  |
+  | editArc | JPanel| Container content, JPanel menuPanel | public| initialize the panels for acc editing ( change username or password ) and the panels of confirmation  | 
+  | getMessageWithUserList | Message |  User currentUser, ArrayList<User> otherUsersList | public |  return the message sent or received by current user |
+  | importMessage | JPanel | Container content, JPanel menuPanel | public | import message files from specify directory |
