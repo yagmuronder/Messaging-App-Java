@@ -1,6 +1,6 @@
 # CS180-Project-5- Improved SocialPlatform
 ## Submission 
-Yagmur Onder - Submitted Report on Brightspace.  
+Kasidit Muenprasitivej - Submitted Report on Brightspace.  
   
 Mahad Faruqi - Submitted Vocareum workspace.
 
