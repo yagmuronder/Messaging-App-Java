@@ -138,7 +138,7 @@ Main method will start MessengerServer thread whenever new MessengerClient socke
 | o | Object  | none   |   an Object created for synchronization |
 | user  | User       | private      |   certain user in the users ArrayList   |
 |users | ArrayList<User>  | private    |    users ArrayList      |
-| u | utils | private | initilization of an Util object|
+| u | utils | private | initilization of an Utils(where has many utility methods used frequently) object |
 
   
 ### Constructor
