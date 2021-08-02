@@ -116,22 +116,35 @@ Mahad Faruqi - Submitted Vocareum workspace.
 ### Fields
 | Name | Type | Modifier | Description |
 |  :---      |     :---   |      :---  |      :---  |
-| o | Object  | none   |   an Object created for checking the type of data  |
+| o | Object  | none   |   an Object created for synchronization |
 | user  | User       | private      |   certain user in the users ArrayList   |
 |users | ArrayList<User>  | private    |    users ArrayList      |
 | userFile | File | public | file contains the data of certain user which make sure data can persist after an completed shutdown|
 
-### Constructor
-  
-  | Parameters | Modifier |
-  | :--- | :--- |
-  | File file, ArrayList<User> users1, User user | public |
- 
- Add the elements of Arraylist users1 to users ArrayList. 
-  
 ### Methods
-
-## 7.
+| Name | Type | Modifier | Description |
+|  :---      |     :---   |      :---  |      :---  |
+| run | void | public   |   the run method of MessengerServer thread |
+#### In the run method, firstly it Initialize userFile and creat a utils object. Then it reads all the up-to-date existed users from userFile.csv. Then if there are more than one user in userFile, it will parse the message for the message function.  After that it will promt the loginOrSign window which is a while loop will never end until the user put the matched imformation save in the userFile. Once the login window loop breaks, it will show the GUI by launch GUI thread.The
  
+### Main 
+Main method will start MessengerServer thread whenever new MessengerClient socket is accepted.
+  
+
+## 7. GUI
+  ### Fields
+| Name | Type | Modifier | Description |
+|  :---      |     :---   |      :---  |      :---  |
+| o | Object  | none   |   an Object created for synchronization |
+| user  | User       | private      |   certain user in the users ArrayList   |
+|users | ArrayList<User>  | private    |    users ArrayList      |
+| userFile | File | public | file contains the data of certain user which make sure data can persist after an completed shutdown|
+
+### Methods
+| Name | Type | Modifier | Description |
+|  :---      |     :---   |      :---  |      :---  |
+| run | void | public   |   the run method of MessengerServer thread |
+
+
 
 
