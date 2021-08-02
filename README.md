@@ -1,13 +1,13 @@
-# CS180-Project-5-IMPROVEDSocialPlatform
+# CS180-Project-5- Improved SocialPlatform
 ## Submission 
 Yagmur Onder - Submitted Report on Brightspace.  
   
 Mahad Faruqi - Submitted Vocareum workspace.
 
 ## Overview
-### The core target of project Social Platform (Option 3) is to create a Java program that permits different users to message each other. Users have the option to message 1 or more users, edit their account, edit their conversations, import a conversation or exit the program. File Input/Output techniques are also utilized widely to make sure data can persist even when the program shuts down or the user(s) is offline. As a social platform, each user who has existing account can message different accounts on the platform (identified as their friend list) or edit a message that has already been sent. 
+### Like the project 4, the core target of project Improved SocialPlatform (Option 3) is to create a Java program that permits different users to message each other with fully covered Graphic User Interface(GUI) and Internet IO. Users have the option to message 1 or more users, edit their account, edit their conversations, import a conversation or exit the program. File Input/Output techniques are also utilized widely to make sure data can persist even when the program shuts down or the user(s) is offline. As a social platform, each user who has existing account can message different accounts on the platform (identified as their friend list) or edit a message that has already been sent. 
 
-### For organization and readability of the project, there are 6 classes ()
+### For organization and readability of the project, there are 7 classes: Utils, Message, Messenger Server, GUI, DuplicateUserException, MessengerClient and User.
  
  
  
@@ -105,6 +105,33 @@ Mahad Faruqi - Submitted Vocareum workspace.
  | getMatch | String | Scanner in, String prompt, String match | public | checks if password is valid when logging in |
  | importFile | void | User currentUser, ArrayList<User> userList | public | user imports CSV file and file updates conversations |
  | getMessageWithUserList | Message | User currentUser, ArrayList<User> otherUsersList | public | returns new Message object with file, users list (with removed current user), and current user |
+ 
+
+
+## 5. MessengerClient
+  
+### MessengerClient class creats the Client socket that connects to the MessengerServer.
+  
+## 6. MessengerServer
+### Fields
+| Name | Type | Modifier | Description |
+|  :---      |     :---   |      :---  |      :---  |
+| o | Object  | none   |   an Object created for checking the type of data  |
+| user  | User       | private      |   certain user in the users ArrayList   |
+|users | ArrayList<User>  | private    |    users ArrayList      |
+| userFile | File | public | file contains the data of certain user which make sure data can persist after an completed shutdown|
+
+### Constructor
+  
+  | Parameters | Modifier |
+  | :--- | :--- |
+  | File file, ArrayList<User> users1, User user | public |
+ 
+ Add the elements of Arraylist users1 to users ArrayList. 
+  
+### Methods
+
+## 7.
  
 
 
