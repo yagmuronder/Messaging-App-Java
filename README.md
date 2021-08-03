@@ -1,8 +1,8 @@
 # CS180-Project-5- Improved Social Messaging Application
 ## Submission 
-Kasidit Muenprasitivej - Submitted Report on Brightspace.  
+Yagmur Onder - Submitted Report on Brightspace.  
   
-Mahad Faruqi - Submitted Vocareum workspace.
+Kasidit Muenprasitivej - Submitted Vocareum workspace.
 
 Yagmur Onder - Submitted  recorded presentation.
 ## Overview
