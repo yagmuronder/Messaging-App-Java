@@ -49,7 +49,14 @@ Expected result: Changes made to respective conversation.
 Test Status: Passed
 
 ## Test 4 - Delete Conversations 
-  
 
-## Test 5 - Delete Account 
+Steps:
+1. Select "Message" button on main menu
+2. Select "Delete Conversation" button underneath "Select a Conversation: "
+3. Select conversation (button) that you want to delete. 
+4. Select "Yes" in confirmation message to detail conversation. 
+  
+Expected result: Conversation no longer exists in "Select a Conversation: " panel for user that deleted the conversation (still present for other user)
+  
+Test Status: Passed
   
