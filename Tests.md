@@ -36,7 +36,7 @@ Steps:
 
 Test Status: Passed 
 
-## Test 3 - Import Conversation
+## Test 3 - Import Conversation Details
   
 Steps:
 1. Open previously made conversation (EX: User1UsernameUser2Username.csv) through TextEdit
@@ -47,3 +47,9 @@ Steps:
 Expected result: Changes made to respective conversation. 
   
 Test Status: Passed
+
+## Test 4 - Delete Conversations 
+  
+
+## Test 5 - Delete Account 
+  
