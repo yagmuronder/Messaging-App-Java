@@ -1,4 +1,4 @@
-# CS180-Project-5- Improved SocialPlatform
+# CS180-Project-5- Improved Social Messaging Application
 ## Submission 
 Kasidit Muenprasitivej - Submitted Report on Brightspace.  
   
