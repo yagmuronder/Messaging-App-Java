@@ -265,4 +265,4 @@ Main method will start MessengerServer thread whenever new MessengerClient socke
   | editMessage | JScrollPane | Container content, Message m| public |  the panels for message editing and adding action listeners for various message editing functions  |
   | editAcc | JPanel| Container content, JPanel menuPanel | public|  the panels for acc editing ( change username or password ) and the panels of confirmation  | 
   | getMessageWithUserList | Message |  User currentUser, ArrayList<User> otherUsersList | public |  return the message information (sender, receiver, content and time stamp) sent or received by current user |
-  | importMessage | JPanel | Container content, JPanel menuPanel | public | import message files from specify directory |
+  | importMessage | JPanel | Container content, JPanel menuPanel | public | import message(sender, receiver, content and time stamp) files from specify directory |
