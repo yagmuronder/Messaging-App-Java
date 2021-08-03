@@ -4,7 +4,7 @@ Yagmur Onder - Submitted Report on Brightspace.
   
 Kasidit Muenprasitivej - Submitted Vocareum workspace.
 
-Yagmur Onder - Submitted  recorded presentation.
+Kasidit Muenprasitivej - Submitted  recorded presentation.
 ## Overview
 ### Like the project 4, the core target of project Improved SocialPlatform (Option 3) is to create a Java program that permits different users to message each other with fully covered Graphic User Interface(GUI) and Internet IO. Users have the option to message 1 or more users, edit their account, edit their conversations, import a conversation or exit the program. File Input/Output techniques are also utilized widely to make sure data can persist even when the program shuts down or the user(s) is offline. As a social platform, each user who has existing account can message different accounts on the platform (identified as their friend list) or edit a message that has already been sent. 
 
